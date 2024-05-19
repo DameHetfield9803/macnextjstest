@@ -1,7 +1,10 @@
-/** @type {import('next').NextConfig} */
+// @ts-check
+ 
+/**
+ * @type {import('next').NextConfig}
+ */
 const nextConfig = {
-  output: "export",  // <=== enables static exports
-  reactStrictMode: true,
-};
-
-module.exports = nextConfig;
+  /* config options here */
+}
+ 
+export default nextConfig
