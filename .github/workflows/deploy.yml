@@ -38,5 +38,5 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "damehetfiel-macnextjste-63"
-          entrypoint: ""
+          entrypoint: ".next/server/pages/index.ts"
           root: ".next"
