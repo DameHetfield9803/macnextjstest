@@ -29,14 +29,14 @@ jobs:
           node-version: lts/*
 
       - name: Install step
-        run: "bun install"
+        run: "npm upgrade && npm install"
 
       - name: Build step
-        run: "bun build"
+        run: "npm run build"
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
           project: "damehetfiel-macnextjste-63"
           entrypoint: "https://deno.land/std@0.217.0/http/file_server.ts"
-          root: ".next/"
+          root: ".out"
